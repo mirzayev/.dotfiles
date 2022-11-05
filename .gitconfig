@@ -1,0 +1,11 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Farid
+	email = mirzayevfarid@gmail.com
+[safe]
+	directory = /home/pi/Work/adviad/ESB
+	directory = /home/pi/Work/adviad/ESB
