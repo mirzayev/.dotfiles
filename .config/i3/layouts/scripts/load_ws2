@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# First we append the saved layout of workspace N to workspace M
+i3-msg "workspace 2: Work; append_layout ~/.config/i3/layouts/workspaces/ws2.json"
+
+# And finally we fill the containers with the programs they had
+(google-chrome &)
+(sleep 1 &)
+(~/app_images/phpstorm/bin/phpstorm.sh &)
+(sleep 1 &)
+(github &)

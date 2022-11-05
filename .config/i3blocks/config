@@ -1,0 +1,37 @@
+#Global_properties
+separator=true
+separator_block_width=12
+command=$HOME/.config/i3blocks/scripts/$BLOCK_NAME
+color=#98c1d9
+markup=pango
+
+border=#98c1d9
+border_top=0
+border_right=0
+border_bottom=2
+border_left=0
+
+
+[time]
+command=date +" %a, %d %b - %H:%M"
+interval=1
+
+[weather]
+command=curl -Ss 'https://wttr.in/Baku?format=4' | xargs echo
+interval=3600
+
+#[temperature]
+#interval=3600
+
+#[cpu_usage]
+#interval=3600
+
+#[memory]
+#interval=1
+
+#[ip]
+#command=hostname -i | awk '{ print " " $4 }'
+#interval=once
+
+
+
